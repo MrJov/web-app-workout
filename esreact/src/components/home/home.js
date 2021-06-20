@@ -12,56 +12,96 @@ export default class Home extends React.Component{
   render(){ 
     return( 
       <div className="home-content">
-        <div id="home-top" className="carousel slide" data-ride="carousel">
-          <div className="carousel-inner">
-            <div className="carousel-item active">
-              <img className="d-block w-100" src={FirstSlideImage} alt="First slide"/>
-            </div>
-            <div className="carousel-item">
-              <img className="d-block w-100" src={SecondSlideImage} alt="Second slide"/>
-            </div>
-            <div className="carousel-item">
-              <img className="d-block w-100" src={ThirdSlideImage} alt="Third slide"/>
-            </div>
-          </div>
-        </div>
         <div className="container">
-          <div className="row" id="what">
+          <div className="row" id="running">
             <div className="col-12 text-center">
-              <h1>Cosa Facciamo</h1>
+              <h1>Running Plan - 10K to 15K</h1>
             </div>
           </div>
-          <div className="row">
-            <div className="col-4 text-center">
-              <h3>Stampa</h3>
-            </div>
-            <div className="col-4 text-center">
-              <h3>Rilegatura</h3>
-            </div>
-            <div className="col-4 text-center">
-              <h3>Pubblicazione</h3>
+          <div className="row ">
+            <div className="col-12">
+              <p>Easy Run --> Passo a cui potrei sostenere una conversazione abbastanza tranquillamente durante la corsa (o, andando da solo, a cui riesco più o meno a canticchiare)</p>
+              <p>Steady Runs --> N corse da circa 800m a passo veloce</p>
+              <p>Tempo Run --> Il primo 30% da fare Easy, poi incremento per il 50% fino a fare 5 minuti Steady, e finisco con un 20% del tempo ancora Easy</p>
+              <p>Cross Training --> Tipo camminata/bicicletta</p>
             </div>
           </div>
-          <div className="row">
-            <div className="col-4 text-justify book-bordered">
-              <p>
-                Tramite un meccanismo iper-avanzato la stampa su carta non contiene errori e ti
-                assicuriamo una qualità ottima anche su lucido.
-              </p>
-            </div>
-            <div className="col-4 text-justify book-bordered">
-              <p>
-                Ogni singolo libro viene rilegato a mano con cuciture in vista. Fatto per durare negli anni,
-                fatto per durare per sempre.
-              </p>
-            </div>
-            <div className="col-4 text-justify book-bordered">
-              <p>
-                Sei un autore? Pubblica il tuo libro con noi! Ci occupiamo di pubblicità e costi di distribuzione,
-                contattaci per saperne di più.
-              </p>
-            </div>
-          </div>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Settimana</th>
+                <th scope="col">Lun</th>
+                <th scope="col">Mar</th>
+                <th scope="col">Mer</th>
+                <th scope="col">Gio</th>
+                <th scope="col">Ven</th>
+                <th scope="col">Sab</th>
+                <th scope="col">Dom</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">31/05-06/06</th>
+                <td>Easy Run 5K</td>
+                <td>Easy Run 6.5K</td>
+                <td>Steady Runs 4*800m</td>
+                <td>Easy Run 3K</td>
+                <td>REST DAY</td>
+                <td>Cross Training</td>
+                <td>Easy Run 10K</td>
+              </tr>
+              <tr>
+                <th scope="row">07/06-13/06</th>
+                <td>Easy Run 5K</td>
+                <td>Easy Run 8K</td>
+                <td>Tempo Run 30'</td>
+                <td>Easy Run 5K</td>
+                <td>REST DAY</td>
+                <td>Cross Training</td>
+                <td>Easy Run 11.5K</td>
+              </tr>
+              <tr>
+                <th scope="row">14/06-20/06</th>
+                <td>Easy Run 5K</td>
+                <td>Easy Run 10K</td>
+                <td>Steady Runs 5*800m</td>
+                <td>Easy Run 6.5K</td>
+                <td>REST DAY</td>
+                <td>Cross Training</td>
+                <td>Easy Run 13K</td>
+              </tr>
+              <tr className="active-week">
+                <th scope="row">21/06-27/06</th>
+                <td>Easy Run 5K</td>
+                <td>Easy Run 6.5K</td>
+                <td>Tempo Run 35'</td>
+                <td>Easy Run 3K</td>
+                <td>REST DAY</td>
+                <td>Easy Run 6.5K</td>
+                <td>Race 5K</td>
+              </tr>
+              <tr>
+                <th scope="row">28/06-04/07</th>
+                <td>Easy Run 5K</td>
+                <td>Easy Run 8K</td>
+                <td>Steady Runs 6*800m</td>
+                <td>Easy Run 5K</td>
+                <td>REST DAY</td>
+                <td>Cross Training</td>
+                <td>Easy Run 11.5K</td>
+              </tr>
+              <tr>
+                <th scope="row">05/07-11/07</th>
+                <td>Easy Run 5K</td>
+                <td>Easy Run 10K</td>
+                <td>Tempo Run 40'</td>
+                <td>Easy Run 6.5K</td>
+                <td>REST DAY</td>
+                <td>Cross Training</td>
+                <td>Easy Run 13K</td>
+              </tr>
+            </tbody>
+          </table>
           <div className="row division">
             <div className="col-12 text-center">
               <div className="important white">

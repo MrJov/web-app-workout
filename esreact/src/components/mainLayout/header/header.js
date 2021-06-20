@@ -9,9 +9,9 @@ export default class Header extends React.Component{
   render(){ 
     return( 
       <div>
-        <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-success">
+        <nav className="navbar fixed-top navbar-expand-lg navbar-light header-background">
           <a className="navbar-brand" href="#">
-            <img src={Logo} className = "logo-image"/>
+            <i className = "fas fa-heartbeat fa-2x header-icon"></i>
           </a>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" 
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,14 +19,15 @@ export default class Header extends React.Component{
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav mr-auto">
-              <a className="nav-item nav-link" href="#home-top">Home</a>
-              <a className="nav-item nav-link" href="#what">What</a>
-              <a className="nav-item nav-link" href="#who">Who</a>
+              <a className="nav-item nav-link" href="#">Running</a>
+              <a className="nav-item nav-link" href="#">Workout</a>
+              <a className="nav-item nav-link" href="#">Diet</a>
+              <a className="nav-item nav-link" href="#">Nichel</a>
             </div>
-            <div className = "navbar-nav">
+            {/* <div className = "navbar-nav">
               <a className="nav-item nav-link" href="">Login</a>
               <a className="nav-item nav-link" href="">Registrazione</a>
-            </div>
+            </div> */}
           </div>
         </nav>
       </div>

@@ -1,5 +1,5 @@
 .home-content .container{
-  margin-top:20px;
+  margin-top:90px;
   margin-bottom:20px;
 }
 .home-content .container .row{
@@ -20,4 +20,7 @@ p.important.white{
   color:white;
   font-size:2em;
   font-weight: 700;
+}
+.active-week {
+  color: red;
 }

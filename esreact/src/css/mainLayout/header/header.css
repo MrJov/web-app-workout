@@ -1,7 +1,9 @@
-.logo-image {
-  width: 35px;
-  height: 35px;
+.header-icon {
+  color: red;
 }
 .nav-item.nav-link {
   font-weight: 700;
+}
+.header-background {
+  background-color: grey;
 }
